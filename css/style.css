@@ -12,31 +12,34 @@ nav{
   position: fixed; 
   display: flex;
   align-items: center; 
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav .logo{
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 1.5px;
+  padding-left: 2rem;
 }
 
 nav .logo p{ 
-  color: black;
+  color: rgb(42, 41, 43);
   text-transform: uppercase;
 } 
-
+nav>ul{
+  padding-right: 5rem;
+}
 nav ul li{
   display: inline-block;
   list-style: none;
 }
 nav ul li a{
-  color: rgb(12, 12, 53);
+  color: rgb(4, 4, 24);
   text-decoration: none;
   font-size: 1.3rem; 
   padding: 0px 1rem;
 }
 
 nav ul li a:hover{
-  color: blue;
+  color: rgb(71, 71, 104);
 }
