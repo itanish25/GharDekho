@@ -1,0 +1,465 @@
+/* Font
+---------------------------------------------------------------*/
+.font-xs{font-size: 1.2rem !important;}
+.font-x1{font-size: 1.6rem !important;}
+.font-x2{font-size: 2.2rem !important;}
+.font-x3{font-size: 3rem !important;}
+.font-x4{font-size: 5rem !important;}
+
+@media screen and (max-width: 1024px){
+  .font-xs{font-size: 1rem !important;}
+  .font-x1{font-size: 1.2rem !important;}
+  .font-x2{font-size: 1.8rem !important;}
+  .font-x3{font-size: 2.5rem !important;}
+  .font-x4{font-size: 4rem !important;}
+}
+
+@media screen and (max-width: 900px){
+  .font-xs{font-size: 0.9rem !important;}
+  .font-x1{font-size: 1.1rem !important;}
+  .font-x2{font-size: 1.4rem !important;}
+  .font-x3{font-size: 2.9rem !important;}
+  .font-x4{font-size: 3rem !important;}
+}
+
+@media screen and (max-width: 768px){
+  .font-xs{font-size: 0.8rem !important;}
+  .font-x1{font-size: 1rem !important;}
+  .font-x2{font-size: 1.2rem !important;}
+  .font-x3{font-size: 1.5rem !important;}
+  .font-x4{font-size: 2.2rem !important;}
+}
+
+@media screen and (max-width: 640px){
+  .font-x3{font-size: 1.3rem !important;}
+}
+
+
+.heading{margin: 0;line-height:normal;}
+
+
+
+
+
+/* margin
+-------------------------------------------------------------*/
+.m-0{margin: 0rem !important;}
+.m-1{margin: 1rem !important;}
+.m-2{margin: 2rem !important;}
+.m-3{margin: 3rem !important;}
+.m-4{margin: 4rem !important;}
+
+.my-1{margin-top: 1rem;margin-bottom: 1rem;}
+.my-2{margin-top: 2rem;margin-bottom: 2rem;}
+.my-3{margin-top: 3rem;margin-bottom: 3rem;}
+.my-4{margin-top: 4rem;margin-bottom: 4rem;}
+.my-5{margin-top: 5rem;margin-bottom: 5rem;}
+.my-6{margin-top: 6rem;margin-bottom: 6rem;}
+
+.mx-1{margin-left: 1rem;margin-right: 1rem;}
+.mx-2{margin-left: 2rem;margin-right: 2rem;}
+.mx-3{margin-left: 3rem;margin-right: 3rem;}
+.mx-4{margin-left: 4rem;margin-right: 4rem;}
+.mx-5{margin-left: 5rem;margin-right: 5rem;}
+.mx-6{margin-left: 6rem;margin-right: 6rem;}
+
+
+
+
+
+/* Padding
+---------------------------------------------------------------*/
+.p-1{padding: 1rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+.p-4{padding: 4rem;}
+
+.nospace{margin: 0 !important;padding: 0 !important;list-style:none;}
+
+
+
+
+
+/* HTML Tags
+-----------------------------------------------------------------*/
+h1, h2, h3, h4, h5{font-weight: normal;}
+ul{margin: 0;}
+article, figure, section{display: block;margin: 0;padding: 0;}
+img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html{overflow-y: scroll;overflow-x; hidden;}
+
+html, body{
+  color: #FFF;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6rem;
+  font-family: Poppins, sans-serif;
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: #767676;
+  cursor: pointer;
+}
+
+
+
+
+
+/* General classes
+-----------------------------------------------------------*/
+.wrapper{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-wrap: break-word;
+}
+.container{padding: 6rem;}
+
+@media screen and (max-width: 1024px){
+  .container{padding: 5rem !important;}
+}
+@media screen and (max-width: 900px){
+  .container{padding: 4rem !important;}
+}
+@media screen and (max-width: 768px){
+  .container{padding: 2rem !important;}
+}
+@media screen and (max-width: 640px){
+  .container{padding: 1.5rem !important;}
+}
+
+/* Background Color */
+.bg-white{background-color: #FFF !important;}
+.bg-light-pink{background-color: #FCEBF0 !important;}
+
+
+/* Width Classes */
+.w-30{width: 30%;}
+.w-40{width: 40%;}
+.w-45{width: 45%;}
+.w-50{width: 50%;}
+.w-60{width: 60%;}
+.w-70{width: 70%;}
+
+@media screen and (max-width: 1024px){
+  .w-70{width: 80%;}
+}
+@media screen and (max-width: 900px){
+  .w-70{width: 90%;}
+}
+@media screen and (max-width: 768px){
+  .w-30{width: 70%;}
+  .w-40, .w-50, .w-60, .w-70{width: 90%;}
+}
+
+/* Text Classes */
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-uppercase{text-transform: uppercase;}
+.text-left{text-align: left !important;}
+text.bold{font-weight: 600;}
+.text-normal{font-weight: normal;}
+.text-justify{text-align: justify !important;}
+.text-black{color: #000 !important;}
+.text-white{color: #FFF !important;}
+.text-dark{color: #767676;}
+.text-pink{color: #E7507B;}
+
+
+/* Flex property:
+This will align all the flex items in different rows under single column*/
+.d-flex-c{
+  display: flex !important;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Flex Property:
+This will align the flex items in different columns within a singl row */
+.d-flex-r{
+  display: flex !important;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/* Overlay class for adding colour efffect to picture */
+.overlay{
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+
+/* Navigation Background
+-------------------------------------------------*/
+#header #logo img{height: 3rem;}
+
+
+
+
+nav ul, nav ol{margin: 0;padding: 0;list-style: none;}
+#main-navbar li{
+  display: inline-block;
+  position: relative;
+  margin: 0 15px;
+  padding: 0;
+}
+
+#main-navbar li a{
+  display: inline-block;
+  margin: 25px 5px;
+  color: inherit;
+}
+
+/* Hide the level 2 and level 3 links */
+#main-navbar ul ul{
+  z-index: 999;
+  position: absolute;
+  width: 180px;
+  text-transform: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Display Level 2 links on hovering */
+#main-navbar ul li:hover > ul{visibility: visible;opacity: 1;}
+
+#main-navbar li li{width: 100%;margin: 0;}
+
+/* Hovering Effect on the level 2 and 3 Links */
+#main-navbar li li:hover > a{
+  color: #FFF;
+  background-color: #E7507B;
+}
+
+/*Format the level  and level 3 links */
+#main-navbar li li a, #main-navbar li li .drop{
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: white;
+}
+
+/* Transition effect on the level 2 and level 3 links */
+#main-navbar a:hover, #main-navbar li:hover > a{
+  color: black;
+  font-size: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+/* Down Arrow next to the Multi Level links */
+#main-navbar .drop::after, #main-navbar li li .drop::after{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 10px;
+  content: '\f107'
+}
+
+/* Position the down arroe icon in the level 1 link */
+#main-navbar .drop::after{
+  padding-left: 0.25rem;
+  top: 30px;
+}
+
+/* Line Animation over the Links */
+#main-navbar .nav-item .nav-link:before{
+  content:"";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 100%;
+  background-color: #E7507B;
+  height: 3px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+/* Line to be drawn from 100% right to 0 Right */
+#main-navbar .nav-item .nav-link:hover::before{right: 0;}
+
+/* Button */
+.btn{
+  position: relative;
+  font-weight: 500;
+  border-width: 1px;
+  letter-spacing: normal;
+  margin: 0.4rem 0.8rem;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: 0.3s, 0.3s, 0.3s, 0.8s;
+  tranistion-timing-function: ease-in-out;
+  padding: 0.8rem 1.5rem;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+}
+
+.btn:hover, .btn:focus{
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,0.2) !important;
+}
+
+.btn-pink, .btn-pink:active{
+  background-color: #E7507B !important;
+  color: #FFF !important;
+  border-color: #E7507B !important;
+}
+.btn-pink:hover, .btn-pink:focus{
+  background-color: #DD1F55 !important;
+  border-color: #DD1F55 !important;
+}
+
+/* Pulsing Effect Animation on Button Hover */
+.btn:hover:after, .btn:focus:after{
+  content: '';
+  border: 1px solid;
+  border-color: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: border-radius 0.3s;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  opacity: 1;
+  animation: 1s btn-animation linear infinite;
+}
+
+@keyframes btn-animation{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768 px){
+  /*Arrange logo and navbar horizontally*/
+  #header.d-flex-r{flex-direction: column;}
+
+  /*Arrange the nav links horizontally */
+  #main-navbar .d-flex-r{flex-direction: column;}
+
+  /* Make sure the line animation is not overflown */
+  #main-navbar > ul > li{max-width: max-content;}
+
+  #main-navbar li a{margin: 10px 5px;}
+  #main-navbar .drop::after{top: 15px;}
+}
+
+/* Top part */
+#top-part{
+  background: url(img/bg-1.jpg) fixed no-repeat;
+  min-height: 992px;
+  background-size: cover;
+  background-position: center;
+}
+
+#top-part .overlay{min-height: 992px;}
+
+/* banner text*/
+#banner-text{
+  position: relative;
+  top: 50px;
+  padding-left: 50px;
+}
+#banner-text .title{font-weight: 800;}
+#banner-text .ubtitle{font-weight: 500;}
+
+/* To align the boxes in the middle of the container */
+#top-part #box{
+  margin-top: 10rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+#top-part #box > .box-item{
+  padding: 3rem;
+}
+
+@media screen and (max-width: 1024px){
+  #top-part {min-height: 950px;}
+  #top-part .overlay {min-height: 950px;}
+}
+@media screen and (max-width: 900px){
+  #top-part {min-height: 900px;}
+  #top-part .overlay {min-height: 900px;}
+}
+@media screen and (max-width: 1768px){
+  #top-part {min-height: 850px;}
+  #top-part .overlay {min-height: 850px;}
+}
+@media screen and (max-width: 640px){
+  #top-part #box.d-flex-r{flex-direction: column;}
+}
+
+/* Image Grid */
+.container-grid{width: 65%;padding-bottom: 6rem;}
+
+/* Image Hover effect 1 */
+.hover1{
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.hover1 .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 0.4s cubic-bezier(0.88,-0.99,0,1.81);
+  opacity: 0;
+}
+.hover1 img{
+  display: block;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.88,-0.99,0,1.81);
+}
+.hover1 h2{
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  font-size: 1.1rem;
+  background-color: rgba(0,0,0,0.6);
+  transform: translateY(-100px);
+  transition: all 0.4s cubic-bezier(0.88,-0.99,0,1.81);
+  padding: 10px
+}
+
+.hover1:hover img{transform: scale(1.2);}
+.hover1:hover .overlay{opacity: 1;}
+.hover1:hover h2{opacity: 1;transform: translateY(0);}
+
+@media screen and (max-width: 768px){
+  /*Arrange the images in a single column */
+  #image-grid ul.d-flex-r{flex-direction: column;}
+}
+@media screen and (max-width: 640px){
+  #image-grid ul{padding: 0;}
+}
