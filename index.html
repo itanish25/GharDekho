@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>House Dekho</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale.0"> 
-    <link rel="icon" href="favicon.ico" type="image/icon type" sizes="64x64" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <p><img src="img/logo.png" alt="logo" width="34rem"/><span>HouseDekho</span></p>
-        </div> 
-        <ul> 
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="house"><a href="#">House</a>
-            <ul class="houseOptn">
-              <li>Buy</li>
-              <li>Sell</li>
-              <li>Rent</li><li class="hideIt">Rentha</li></li> 
-            </ul>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>   
-      <div class="w3-content w3-display-container" style="max-width:800px">
-        <img class="mySlides" src="img/home1.png" style="width:100%">
-        <img class="mySlides" src="img/home1.png" style="width:100%">
-        <img class="mySlides" src="img/home1.png" style="width:100%">
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
+<head>
+  <title>House Dekho</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale.0">
+  <link rel="icon" href="favicon.ico" type="image/icon type" sizes="64x64" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <p><img src="img/logo.png" alt="logo" width="34rem" /><span>HouseDekho</span></p>
+      </div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="house"><a href="#">House</a>
+          <ul class="houseOptn">
+            <li>Buy</li>
+            <li>Sell</li>
+            <li>Rent</li>
+            <li class="hideIt">Rentha</li>
+        </li>
+      </ul>
+      <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> 
+    <div class="sliderBody"><div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: #fde">
+          <h1>Pink Cherrish</h1>
+          <p>to evolve into care</p>
+        </div>
+        <div style="background-color: rgb(254,160,0)">
+          <h1>Yellow Luck</h1>
+          <p>Shinning the clouds</p>
+        </div>
+        <div style="background-color: rgb(231, 58, 95)">
+          <h1>Redness Lust</h1>
+          <p>in the wilderness</p>
+        </div>
+        <div style="background-color: rgb(176, 136, 240)">
+          <h1>Lavanda Love</h1>
+          <p>in the sunset</p>
         </div>
       </div>
-      
-      
-    </header>
-    <div class="slide">  
-    <div class="slide-w"> 
+      <div class="right-slide">
+        <div style="background-image: url('img/home0.jpg')"></div>
+        <div style="background-image: url('img/home1.png')"></div>
+        <div style="background-image: url('img/home2.jpg')"></div>
+        <div style="background-image: url('img/home3.jpg')"></div>
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i>&#8595;</i>
+        </button>
+        <button class="up-button">
+          <i>&#8593;</i>
+        </button>
+      </div>
+    </div></div>
+  </header>
+  <div class="slide">
+    <div class="slide-w">
     </div>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
