@@ -21,16 +21,16 @@
   <header>
     <nav>
       <div class="logo">
-        <p><img src="img/logo.png" alt="logo" width="34rem" /><span>HouseDekho</span></p>
+        <p class="homepage"><img style="padding-bottom: 0.7rem;" src="img/logo.png" alt="logo" width="34rem" /><span style="color: rgb(250, 209, 223); padding-left: 1px;">GharDekho</span></p>
       </div>
       <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
         <li class="house"><a href="#">House</a>
           <ul class="houseOptn">
-            <li>Buy</li>
-            <li>Sell</li>
-            <li>Rent</li>
+            <li class="optnB">Buy</li>
+            <li class="optnS">Sell</li>
+            <li class="optnR">Rent</li>
             <li class="hideIt">Rentha</li>
         </li>
       </ul>
@@ -75,26 +75,6 @@
   <div class="slide"></div>
   <div class="slide-w"></div> 
   <main>
-    <section class="cards row">
-      <div class="card">
-        <img src="img/buy.png" alt="buy">
-        <h1>BUY</h1>
-        <p>Lorem ipsum dolo endi numquam, tempore ex nulla et qui beatae deleniti fuga.</p>
-        <a href="#">Search Homes</a>
-      </div>
-      <div class="card">
-        <img src="img/sell.jpg" alt="buy">
-        <h1>SELL</h1>
-        <p>Lorem ipsum dolo endi numquam, tempore ex nulla et qui beatae deleniti fuga.</p>
-        <a href="#">List Your Home</a>
-      </div>
-      <div class="card">
-        <img src="img/rent.jpg" alt="buy">
-        <h1>RENT</h1>
-        <p>Lorem ipsum dolo endi numquam, tempore ex nulla et qui beatae deleniti fuga.</p>
-        <a href="#">Search Rentals</a>
-      </div>
-    </section> 
         <!-- Top Background-Image wrapper -->
     <section class="wrapper" id="top-part">
           <div class="overlay">
@@ -237,6 +217,26 @@
           </div>
       
     </section>
+    <section class="cards row bg-light-pink">
+      <div class="card">
+        <img src="img/buy.png" alt="buy">
+        <h1>BUY</h1>
+        <p>Lorem ipsum dolo endi numquam, tempore ex nulla et qui beatae deleniti fuga.</p>
+        <div class="btn btn-pink font-xs optnB">Search Homes</div>
+      </div>
+      <div class="card">
+        <img src="img/sell.jpg" alt="buy">
+        <h1>SELL</h1>
+        <p>Lorem ipsum dolo endi numquam, tempore ex nulla et qui beatae deleniti fuga.</p>
+        <div class="btn btn-pink font-xs optnS">List Your Home</div>
+      </div>
+      <div class="card">
+        <img src="img/rent.jpg" alt="buy">
+        <h1>RENT</h1>
+        <p>Lorem ipsum dolo endi numquam, tempore ex nulla et qui beatae deleniti fuga.</p>
+        <div class="btn btn-pink font-xs optnR">Search Rentals</div>
+      </div>
+    </section> 
   </main>
   
     <script src="js/script.js"></script>

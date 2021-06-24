@@ -17,7 +17,7 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: -4px -4px 30px rgb(107, 106, 106);
-  margin-bottom: 5rem;
+  margin-bottom: 0;
 }
 nav{
   top: 0%;
@@ -62,6 +62,9 @@ nav ul li a:hover{
   opacity: 0.7;
   transition: 0.4s;
 }
+.homepage:hover{
+  cursor: pointer;
+}
 
 
 
@@ -92,7 +95,7 @@ nav ul li a:hover{
   position: fixed;
   background-color: transparent;
   color: #fff;
-  overflow: visible
+  overflow: visible;
 }
 
 .slide:before {
@@ -110,11 +113,11 @@ nav ul li a:hover{
   -moz-transition-delay: 0.35s;
   -o-transition-delay: 0.35s;
   -ms-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-  display: block;
+  transition-delay: 0.35s; 
   width: 370vw;
-  height: auto;
-  padding-top: 370vw;
+  height: 70vw;
+  padding-top: 370vh;
+  padding-right: 150vw;
   background-color: #3c3c42;
   position: fixed;
   top: 0;
@@ -122,7 +125,7 @@ nav ul li a:hover{
   -ms-transform-origin: 100% 0%;
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  border-radius: 50%; 
+  border-radius: 100%; 
   z-index: 1
 }  
  
@@ -172,8 +175,9 @@ nav ul li a:hover{
   transition-delay: 0.35s;
   display: block;
   width: 370vw;
-  height: auto;
-  padding-top: 370vw;
+  height: 70vw;
+  padding-top: 370vh;
+  padding-right: 150vw;
   background-color: #eeeef5;
   position: fixed;
   top: 0;
@@ -181,7 +185,7 @@ nav ul li a:hover{
   -ms-transform-origin: 100% 0%;
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  border-radius: 50%; 
+  border-radius: 100%; 
   z-index: 1
 }  
 .active {
@@ -215,10 +219,8 @@ nav ul li a:hover{
 }
 
 .houseOptn{ 
-  background-color: #4f4f539c; 
-  z-index: 10;
-  border: 2px solid rgb(104, 104, 104);
-  border-top: none !important;
+  background-color: rgba(39, 36, 44, 0.65); 
+  z-index: 10; 
   border-bottom-left-radius: 0.7rem;
   border-bottom-right-radius: 0.7rem;
   padding: 1.4rem;
@@ -363,7 +365,7 @@ button:focus {
 }
 
 main{
-  margin-top: 13rem;
+  margin-top: 0;
 }
 .card>img{
   width: 17rem;
@@ -377,7 +379,7 @@ main{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   flex-direction: column; 
-  background-color: rgba(245, 245, 245, 0.493);
+  background-color: rgba(245, 245, 245, 0.897);
   border-radius: 0.5rem;
   margin: 0.5rem; 
   align-items: center;
@@ -391,27 +393,14 @@ main{
   height: 35.3rem;
 }
 .cards.row {
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 3rem;
+  padding: 3rem;
+  padding-top: 5rem;
+  margin-bottom: 10rem;
 }  
-.card>a{
-  width: 10rem;
-  height: 5rem;
-  background-color: rgb(236, 89, 158);
-  border-radius: 0.5rem;
-  text-decoration: none; 
-  padding: 1rem;
-  border-color : 2px solid pink;
-  box-shadow: -1px -1px 5px rgb(128, 99, 119);
-  color: #fff;
-}
-.card>a:hover{
-  transition: 0.35s;
-  box-shadow: -1px 1px 15px rgb(128, 99, 119);
-}
 .card>p{ 
   max-width: 18rem;
   padding-top: 1rem;
@@ -595,7 +584,7 @@ This will align the flex items in different columns within a singl row */
   border-color: #f75f8a !important;
 }
 .btn-pink:hover, .btn-pink:focus{
-  background-color: #DD1F55 !important;
+  background-color: #df275b !important;
   border-color: #f03a6e !important;
 }
 
@@ -620,7 +609,7 @@ This will align the flex items in different columns within a singl row */
     transform: scale(1);
   }
   100%{
-    transform: scale(1.3);
+    transform: scale(1.3,1);
     opacity: 0;
   }
 }
