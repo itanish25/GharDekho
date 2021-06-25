@@ -752,6 +752,40 @@ a{
   cursor: pointer;
 }
     
+.furniture-1{ 
+  border-radius: 1rem;
+}
+.furniture-2{ 
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+.furniture-1{
+  margin-top: 5.9rem;
+  width: 37vw;
+  height: 22rem;
+  border-radius: 1rem;
+}
+.furniture-2{
+  margin-top: 4.3rem;
+  width: 37vw;
+  height: 22rem;
+  border-radius: 1rem;
+}
+.furniture-1:hover{
+  box-shadow: -2px -2px 24px rgb(54, 42, 42);
+  width: 37.2vw;
+  transition: 0.5s;
+  height: 22.2rem;
+}
+.furniture-2:hover{
+  box-shadow: -2px -2px 24px rgb(58, 51, 51);
+  margin-top: 4.3rem;
+  width: 37.2vw;
+  transition: 0.5s;
+  height: 22.2rem;
+}
+}
    
 /*Features Grid
 --------------------------------------*/
@@ -781,14 +815,13 @@ a{
 
 
 /*Parallax image----------------------------------*/
-#parallax-image{background: url(img/house8.jpg) fixed no-repeat;}
+#parallax-image{background: url(../img/house8.jpg) rgba(61, 70, 75,0.7) fixed no-repeat;background-blend-mode: darken;}
 
 
 
 /* Our blog panels
 -------------------------------------------------- */
-#our-blog{background: url (img/house1.jpg);}
-
+ 
 /* 4% margin on the left of all <articles> tags except the first one */
 #our-blog article:not(:first-child){margin-left: 4%;}
 
@@ -830,7 +863,7 @@ a{
 /* Text grid with parallax Image
 ------------------------------------------------*/
 #parallax-text-grid{
-  background-image: url(img/house12.jpg);
+  background-image: url(../img/house12.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;    /*Parallax Effect */
@@ -888,3 +921,12 @@ a{
 #social-icons .socicon-bg-pinterest:after{border-color: #C92619;}
 #social-icons .socicon-bg-instagram{background: #3F729B;}
 #social-icons .socicon-bg-instagram:after{border-color: #3F7298;}
+
+
+.cards-4{
+  padding: 2rem;
+  padding-left: 3rem;
+}
+.left-card{
+  padding: 3rem; 
+}
