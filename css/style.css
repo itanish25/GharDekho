@@ -501,6 +501,29 @@ a{
 .w-60{width: 60%;}
 .w-70{width: 70%;}
 
+/* margin
+-------------------------------------------------------------*/
+.m-0{margin: 0rem !important;}
+.m-1{margin: 1rem !important;}
+.m-2{margin: 2rem !important;}
+.m-3{margin: 3rem !important;}
+.m-4{margin: 4rem !important;}
+
+.my-1{margin-top: 1rem;margin-bottom: 1rem;}
+.my-2{margin-top: 2rem;margin-bottom: 2rem;}
+.my-3{margin-top: 3rem;margin-bottom: 3rem;}
+.my-4{margin-top: 4rem;margin-bottom: 4rem;}
+.my-5{margin-top: 5rem;margin-bottom: 5rem;}
+.my-6{margin-top: 6rem;margin-bottom: 6rem;}
+
+.mx-1{margin-left: 1rem;margin-right: 1rem;}
+.mx-2{margin-left: 2rem;margin-right: 2rem;}
+.mx-3{margin-left: 3rem;margin-right: 3rem;}
+.mx-4{margin-left: 4rem;margin-right: 4rem;}
+.mx-5{margin-left: 5rem;margin-right: 5rem;}
+.mx-6{margin-left: 6rem;margin-right: 6rem;}
+
+
 @media screen and (max-width: 1024px){
   .w-70{width: 80%;}
 }
@@ -550,9 +573,6 @@ This will align the flex items in different columns within a singl row */
   z-index: 1;
   background-color: rgba(0,0,0,0.6) !important;
 }
-
-
- 
  
  
 /* Button */
@@ -591,7 +611,8 @@ This will align the flex items in different columns within a singl row */
 /* Pulsing Effect Animation on Button Hover */
 .btn:hover:after, .btn:focus:after{
   content: '';
-  border: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
   border-color: inherit;
   width: 100%;
   height: 100%;
@@ -709,3 +730,161 @@ This will align the flex items in different columns within a singl row */
 .subtitle{
   margin-bottom: 4rem;
 }
+
+
+
+
+
+.padd{
+  padding-bottom: 1rem;
+}
+.padd-2{
+  padding-bottom: 2rem;
+}
+.padd-4{
+  padding-bottom: 4rem;
+}
+ 
+a{
+  outline: none;
+  text-decoration: none;
+  color: #767676;
+  cursor: pointer;
+}
+    
+   
+/*Features Grid
+--------------------------------------*/
+.features-grid-container{
+  width: 80%;
+  margin-left: auto;margin-right: auto; /* Align all the conatiner in the centre*/
+  padding-bottom: 6rem;
+}
+
+/* Reverse the position of image and text in second row */
+.features-grid-row#second-row{flex-direction: row-reverse;}
+
+#first-row .features-grid-row-text{text-align: left;}
+#second-row .features-grid-row-text{text-align: right;}
+
+@media screen and (max-width: 768px){
+  .features-grid-row .w-50{
+    width: 80%;
+    margin-left: auto;margin-right: auto; /*Align in  the center */
+  }
+  .features-grid-row.d-flex-r{flex-direction: column;}
+  .features-grid-row#second-row{flex-direction: column;}
+
+  #first-row .features-grid-row-text,
+  #second-row .features-grid-row-text{text-align: center;}
+}
+
+
+/*Parallax image----------------------------------*/
+#parallax-image{background: url(img/house8.jpg) fixed no-repeat;}
+
+
+
+/* Our blog panels
+-------------------------------------------------- */
+#our-blog{background: url (img/house1.jpg);}
+
+/* 4% margin on the left of all <articles> tags except the first one */
+#our-blog article:not(:first-child){margin-left: 4%;}
+
+#our-blog article{
+  transition: 0.5s ease;
+  border: 1px solid #DDD;
+}
+
+#our-blog article:hover{
+  transition: 0.5s ease;
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,0.5);
+}
+
+#our-blog .meta li{display: inline-block;font-size: 0.8rem;}
+
+/* Adding margin and divider "|" after the tag icons */
+#our-blog .meta li:after{margin-left: 5px;content: "|";}
+
+/* Remove the margin and divider "|" after the last tag */
+#our-blog .meta li:last-child::after{margin: 0; content: "";}
+
+/*Image Hover effect  2*/
+.hover2 figure{background: #FFF; overflow: hidden;}
+.hover2 figure img{
+  transition: 0.3s ease-in-out;
+  transform: rotate(15deg) scale(1.4); /*Rotate and enlarges the images */
+}
+
+.hover2 figure:hover img{
+  transform: rotate(0) scale(1);/*Back to original shape and orientation on hover */
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px){
+  #our-blog-panel.d-flex-r{flex-direction: column;}
+}
+
+
+/* Text grid with parallax Image
+------------------------------------------------*/
+#parallax-text-grid{
+  background-image: url(img/house12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;    /*Parallax Effect */
+}
+#parallax-text-grid-divider{
+  padding-top: 10rem;padding-bottom: 10rem;
+}
+#parallax-text-grid .title{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#parallax-text-grid .card-2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#parallax-text-grid .title .num{
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 0;
+  font-size: 6rem;
+  width: 100%;
+  color: #767676;
+}
+#parallax-text-grid .title .card-title{z-index: 1;width: 100%;}
+#parallax-text-grid .card-2 .card-text{margin-top: 2rem;}
+
+@media screen and(max-width: 768px){
+  #parallax-text-grid-divider .d-flex-r{flex-direction: column;}
+  #parallax-text-grid-divider #right-half .d-flex-r{flex-direction: column;}
+  #parallax-text-grid-divider #left-half{align-items: center;margin-bottom: 3rem;}
+  #parallax-text-grid .card-2{text-align: center !important;}
+  #parallax-text-grid-divider{
+    width: 70%;
+    margin-left: auto;margin-right: auto;
+    padding: 5rem 2rem;
+  }
+}
+
+
+/* Main footer
+--------------------------------------------------*/
+
+/* Social Buttons */
+#social-icons .socicon-bg-facebook{background: #3E5B9B;}
+#social-icons .socicon-bg-facebook:after{border-color: #3E5B9B;}
+#social-icons .socicon-bg-twitter{background: #4DA7DE;}
+#social-icons .socicon-bg-twitter:after{border-color: #4DA7DE;}
+#social-icons .socicon-bg-youtube{background: ##CA302B;}
+#social-icons .socicon-bg-youtube:after{border-color: #CA302B;}
+#social-icons .socicon-bg-linkedin{background: #0E76A8;}
+#social-icons .socicon-bg-linkedin:after{border-color: #0E76A8;}
+#social-icons .socicon-bg-pinterest{background: #C92619;}
+#social-icons .socicon-bg-pinterest:after{border-color: #C92619;}
+#social-icons .socicon-bg-instagram{background: #3F729B;}
+#social-icons .socicon-bg-instagram:after{border-color: #3F7298;}
