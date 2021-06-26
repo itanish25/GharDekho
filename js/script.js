@@ -1,10 +1,6 @@
 const slide=document.querySelector('.slide');
 const slideW=document.querySelector('.slide-w');
-const house=document.querySelector('.house');
-const optnS=document.querySelector('.optnS'); 
-const optnB=document.querySelector('.optnB'); 
-const optnR=document.querySelector('.optnR');
-const homepage=document.querySelector('.homepage');
+const house=document.querySelector('.house'); 
 const houseOptn=document.querySelector('.houseOptn'); 
 
 house.addEventListener('mouseenter',()=>{
@@ -12,70 +8,22 @@ house.addEventListener('mouseenter',()=>{
 });
 house.addEventListener('mouseleave',()=>{
     houseOptn.classList.remove('houseHover');
-});
-optnS.addEventListener('click',navopenS); 
-optnB.addEventListener('click',navopenB);  
-optnR.addEventListener('click',navopenR);   
-homepage.addEventListener('click',navopenH);  
-function navopenS(){
-    slide.classList.add('active');
-    setTimeout(()=>{
-        navcloseS();
-    },1000);
-}
-function navopenH(){
-    slide.classList.add('active');
-    setTimeout(()=>{
-        navcloseH();
-    },1000);
-}
-function navopenB(){
-    slide.classList.add('active');
-    setTimeout(()=>{
-        navcloseB();
-    },1000);
-}
-function navopenR(){
-    slide.classList.add('active');
-    setTimeout(()=>{
-        navcloseR();
-    },1000);
-}
-
-function navcloseS(){
-    slide.classList.remove('active');
-    slideW.classList.add('active');
-    setTimeout(()=>{ 
-        slideW.classList.remove('active');
-        window.location.href="../sell.html";
-    },1000);
-}
-function navcloseH(){
-    slide.classList.remove('active');
-    slideW.classList.add('active');
-    setTimeout(()=>{ 
-        slideW.classList.remove('active');
-        window.location.href="../index.html";
-    },1000);
-}
-function navcloseB(){
-    slide.classList.remove('active');
-    slideW.classList.add('active');
-    setTimeout(()=>{ 
-        slideW.classList.remove('active');
-        window.location.href="../buy.html";
-    },1000);
-}
-function navcloseR(){
-    slide.classList.remove('active');
-    slideW.classList.add('active');
-    setTimeout(()=>{ 
-        slideW.classList.remove('active');
-        window.location.href="../rent.html";
-    },1000);
-}
-
+}); 
  
+function navopen(){
+    slide.classList.add('active');
+    setTimeout(()=>{
+        navclose();
+    },1000);
+}
+
+function navclose(){
+    slide.classList.remove('active');
+    slideW.classList.add('active');
+    setTimeout(()=>{ 
+        slideW.classList.remove('active'); 
+    },1000);
+} 
 /**slider */
 const sliderContainer = document.querySelector('.slider-container')
 const slideRight = document.querySelector('.right-slide')
